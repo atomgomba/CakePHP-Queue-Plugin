@@ -1,5 +1,5 @@
 {
-	"name": "webtechnick/cakephp-queue-plugin",
+	"name": "atomgomba/cakephp-queue-plugin",
 	"description": "CakePHP Queue Plugin - Complete tool to background and schedule your time consuming tasks.  Queue up almost anything from CakePHP shells, models, and actions to standard php commands or even shell commands.",
 	"type": "cakephp-plugin",
 	"keywords": ["cakephp", "background", "tasks", "crons", "plugin"],
@@ -10,6 +10,11 @@
 			"name": "Nick Baker",
 			"homepage": "http://www.webtechnick.com",
 			"role": "Author"
+		},
+		{
+			"name": "Károly Kiripolszky",
+			"homepage": "http://ekezet.com",
+			"role": "Contributor"
 		}
 	],
 	"support": {
