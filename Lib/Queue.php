@@ -11,12 +11,16 @@
 App::uses('QueueUtil','Queue.Lib');
 class Queue extends Object {
 	/**
-	* Placeholder for Task
-	*/
-	private static $QueueTask = null;
+	 * Placeholder for Task
+	 *
+	 * @var QueueTask
+	 */
+	public static $QueueTask = null;
 	/**
-	* Placeholder for TaskLog
-	*/
+  	 * Placeholder for TaskLog
+	 *
+	 * @var QueueTaskLog
+	 */
 	private static $QueueTaskLog = null;
 
 	/**
@@ -49,7 +53,7 @@ class Queue extends Object {
 		QueueUtil::clearCache();
 		return $retval;
 	}
-	
+
 	/**
 	* Run a task specifically.
 	* @param string uuid
@@ -100,7 +104,7 @@ class Queue extends Object {
 		self::loadQueueTask();
 		return self::$QueueTask->next($limit, false, false);
 	}
-	
+
 	/**
 	* Process the Queue, runs the queue
 	* @return boolean success
